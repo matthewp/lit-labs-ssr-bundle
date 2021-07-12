@@ -16,7 +16,7 @@ A full example is below:
 
 ```js
 import 'https://cdn.spooky.click/dom-shim/1.0.0/mod.js?global';
-import { LitElementRenderer } from 'https://cdn.spooky.click/lit-labs-ssr-bundle/1.0.0/mod.js';
+import { LitElementRenderer } from 'https://cdn.spooky.click/lit-labs-ssr-bundle/1.0.1/mod.js';
 import { LitElement, html } from 'https://cdn.skypack.dev/lit@2.0.0-rc.2';
 
 class MyElement extends LitElement {
