@@ -15,7 +15,7 @@ async function crawlDir(dir) {
         text = text.replace(`import { createRequire } from 'module';`, '');
         text = text.replace(`const require = createRequire(import.meta.url);`, '');
   
-        text = text.replace(`const escapeHtml = require('escape-html');`, `import { escapeHtml } from 'escape-html';`);  
+        text = text.replace(`const escapeHtml = require('escape-html');`, `import escapeHtml from 'escape-html';`);
         text = text.replace(`const parse5 = require('parse5');`, `import * as parse5 from 'parse5';`);
   
         await Deno.writeTextFile(fileUrl, text);
