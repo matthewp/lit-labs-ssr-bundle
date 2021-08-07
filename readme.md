@@ -7,7 +7,7 @@ This a bundle containing the contents of `@lit-labs/ssr`. This bundle is made to
 Rendering Lit elements outside the browser needs a DOM shim. We'll use [dom-shim](https://github.com/matthewp/dom-shim) in these examples.
 
 ```js
-import 'https://cdn.spooky.click/dom-shim/1.0.0/mod.js?global';
+import 'https://cdn.spooky.click/dom-shim/1.2.0/mod.js?global';
 ```
 
 This bundle exports `LitElementRenderer` which can be used to render elements created with LitElement. This is relatively low-level code and gives you complete control over serialization.
@@ -15,7 +15,7 @@ This bundle exports `LitElementRenderer` which can be used to render elements cr
 A full example is below:
 
 ```js
-import 'https://cdn.spooky.click/dom-shim/1.0.0/mod.js?global';
+import 'https://cdn.spooky.click/dom-shim/1.2.0/mod.js?global';
 import { LitElementRenderer } from 'https://cdn.spooky.click/lit-labs-ssr-bundle/1.0.1/mod.js';
 import { LitElement, html } from 'https://cdn.skypack.dev/lit@2.0.0-rc.2';
 
